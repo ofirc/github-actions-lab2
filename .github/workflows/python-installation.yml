@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: '{{ matrix.py-version }}'
+    runs-on: '{{ matrix.os }}'
     strategy:
       matrix:
         py-version: ["3.10", "3.11", "3.12"]
